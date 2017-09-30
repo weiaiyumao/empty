@@ -1,0 +1,140 @@
+
+header .logo{
+    background:url('../image/logo_blue.png') no-repeat center center;
+}
+header .list-wrapper ul.list li span{
+    color:#59607c;
+}
+
+/*content开始*/
+.content .box{
+    margin-bottom:32px;
+    background-color:#fff;
+}
+.content .box:nth-child(2){
+    margin-bottom:0;
+}
+.content .box h2{
+    padding-left:22px;
+    height:52px;
+    line-height:52px;
+    color:#676767;
+    font-size:16px;
+    font-weight:normal;
+    border-bottom:1px solid #4f89fc;
+}
+.content .box2 h2{
+    border-bottom:1px solid #f3bb02;
+}
+.content .box ul{
+    height:260px;
+}
+.content .box ul li{
+    float:left;
+    padding-top:53px;
+    width:25%;
+    height:260px;
+    border-right: 1px solid #e9edf2;
+    text-align: center;
+}
+.content .box ul li:nth-child(4){
+    border:none;
+}
+.content .box ul li .icons{
+    margin:0 auto 22px;
+    width:62px;
+    height:62px;
+}
+.content .box ul li .icon1{
+    background: url("../image/icon1.png") no-repeat center center;
+}
+.content .box ul li .icon2{
+    background: url("../image/icon2.png") no-repeat center center;
+}
+.content .box ul li .icon3{
+    background: url("../image/icon3.png") no-repeat center center;
+}
+.content .box ul li .icon4{
+    background: url("../image/more.png") no-repeat 5px 45px;
+}
+.content .box ul li span{
+    color:#676767;
+}
+.content .box ul li a.enters{
+    display: block;
+    width:120px;
+    margin: 25px auto 0;
+    height:29px;
+    line-height:27px;
+    cursor: pointer;
+    background-color:#4f89fc;
+    border:1px solid #4f89fc;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.content .box ul li a.enters:hover{
+    background-color:#fff;
+    color:#4f89fc;
+}
+/*content结束*/
+
+/*footer开始*/
+.footer-wrapper{
+    padding-top:64px;
+    height:423px;
+    background-color:#09102c;
+}
+.footer-wrapper .footer{
+
+}
+.footer-wrapper .footer .href-list{
+    width:580px;
+}
+.footer-wrapper .footer .href-list:nth-child(2){
+    width:100px;
+}
+.footer-wrapper .footer .href-list h3{
+    margin-bottom:32px;
+    font-weight:normal;
+}
+.footer-wrapper .footer .href-list ul{
+    height:130px;
+}
+.footer-wrapper .footer .href-list ul li{
+    float:left;
+    margin-bottom:18px;
+    width:280px;
+    height:12px;
+    line-height:12px;
+}
+.footer-wrapper .footer .href-list ul li a{
+    color:#9599a3;
+    position: relative;
+}
+.footer-wrapper .footer .href-list ul li a i{
+    position: absolute;
+    left:80px;
+    top:-5px;
+    width:36px;
+    height:26px;
+    background-color:#9599a3;
+    border-radius: 12px;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+.footer-wrapper .footer .href-list ul li a i.qq{
+    background-image: url('../image/qq.png');
+}
+.footer-wrapper .footer .href-list ul li a i.wx{
+    background-image: url('../image/wx.png');
+}
+.copyright p{
+    height:12px;
+    line-height:12px;
+    margin-bottom:12px;
+    color:#4d5668;
+}
+/*footer结束*/
