@@ -1,0 +1,141 @@
+<!DOCTYPE html ">
+<html lang="en"> 
+<!-- <html lang="en"> -->
+<head>
+    <meta charset="UTF-8">
+    <title>空号检测</title>
+    <meta meta http-equiv="X-UA-Compatible" content="IE=8" meta http-equiv="X-UA-Compatible" content="IE=7">
+    <script rel="script" src="../js/jquery-3.2.1.min.js?2017101126"></script>
+    <!-- <script rel="script" src="../js/jquery.cookie.js?2017101127"></script> -->
+    <link rel="stylesheet" href="../css/main.css?2017101128">
+    <link rel="stylesheet" href="../css/index.css?2017101129">
+    <link rel="SHORTCUT ICON" href="../image/icon40.png?2017101130"/>
+    
+</head>
+<body>
+<div class="wrapper">
+    <header class="cf">
+        <div class="logo fl"></div>
+        <div class="list-wrapper fr">
+            <ul class="list fl cf">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="./product.html">产品页</a></li>
+                <li><a href="./we.html">中心简介</a></li>
+            </ul>
+            <button id="rechargeBtn"><a href="./recharge.html">充值</a></button>
+            <div class="personal-center fl">
+                <span>个人中心</span>
+                <ul>
+                    <li><a href="./personal-center.html">进入账户</a></li>
+                    <li><a href="./result.html">历史检测</a></li>
+                    <!-- <li><a id="bindErp" href="#">绑定自助通</a></li> -->
+                    <li><a id="loginOut" href="#">退出登录</a></li>
+                </ul>
+            </div>
+            <div id="login" class="fr">一键登录</div>
+        </div>
+
+    </header>
+    <content>
+        <div class="title"></div>
+        <div class="file-box cf">
+            <div class="file fl" id="fileName">请上传文件进行检测</div>
+            <input id="file" type="file" accept="text/plain" style="display: none;">
+            <button id="fileBtn" class="fileBtn fl">浏览</button>
+            <button id="notAllow" class="fileBtn fl">浏览</button>
+            <p class="tip fl">注:文件格式支持txt类型文件/支持50W号码包上传</p>
+            <button id="test">立即检测</button>
+            <button id="testBtnDisabled">文件上传中</button>
+            <div id="testing">
+                <img class="loading" src="../image/loading.png">
+                <img class="right-icon" src="../image/right_icon.png">
+                <span class="fl">空号智能检测</span>
+                <span class="text fl">正在检测</span>
+            </div>
+            <div id="testBox" class="animated">
+                <h1>空号检测</h1>
+                <span class="close"></span>
+                <div id="loadingBox" class="circle">
+                    <div id="progress">0%</div>
+                    <div id="loading1" class="circle"></div>
+                    <div id="loading2" class="circle"></div>
+                    <div id="loading3" class="circle"></div>
+                </div>
+                <div id="fileLoading">文件解析中,请稍等</div>
+                <p>正在检测（<span id="runCount">0</span>/<span id="allCount"></span>）</p>
+
+                <div class="numList-wrapper">
+                    <ul id="numList" class="cf">
+
+                    </ul>
+                </div>
+                <div class="des">无需等待，系统后台自动执行......</div>
+            </div>
+        </div>
+        <div id="noBalance">
+            <img src="../image/notice.png">
+            <p>抱歉!当前余额不足</p>
+            <p>无法检测</p>
+            <button><a href="./recharge.html">立即充值</a></button>
+            <span id="close1"></span>
+        </div>
+        <div id="doneBox">
+            <img src="../image/success.png">
+            <p class="p1">恭喜！检测完成</p>
+            <p class="p2">本次检测自动扣除余额：<span class="red"><span class="cost"></span>条</span></p>
+            <p class="p3">账户余额：<span style="color:#1f822e;"><span class="last"></span>条</span></p>
+            <p class="p4"><span id="second">10</span>s后进入检测结果页面，或点击<a href="./result.html">直接进入</a></p>
+            <!--<span id="close2"></span>-->
+        </div>
+        <div id="mask"></div>
+
+        <!-- <div id="loginBox">
+            <p>一键登录</p>
+            <input id="account" placeholder="请输入账号(手机号码)" type="text"/>
+            <span id="warningTel" class="red">手机格式不正确</span>
+            <div class="code-wrapper cf">
+                <input id="code" class="fl" placeholder="请输入验证码" type="text"/>
+                <div id="getCode" class="fr">获取验证码</div>
+                <div id="codeBtn" class="fr"><span>60</span>S</div>
+                <span id="warningCode" class="red">验证码不能为空</span>
+                <span id="wrongCode" class="red">验证码错误</span>
+            </div>
+            <div id="loginBtn">登录</div>
+            <div class="login-disabled-btn loading-btn">登录</div>
+            <span class="closeLogin"></span>
+        </div>
+
+        <div id="tipBox"></div> -->
+
+        <div id="bindAccount">
+            <span class="fl">是否绑定自助通账号，绑定请点击</span>
+            <button id="bind" class="fl fr">绑定</button>
+        </div>
+        <div id="notice" class="notice-box">
+            <p>接收检测结果的联系方式</p>
+            <div id="phone" class="ipt2 phone"></div>
+            <input id="email" class="ipt2" type="text" placeholder="请填写您接收结果的邮箱地址（选填）">
+            <span id="warningMail" class="red">邮箱格式不正确</span>
+            <span id="warningNull" class="red">邮箱不能为空</span>
+            <div class="buttons cf">
+                <div id="confirmModify" class="confirm-btn fl">确认</div>
+                <div id="modifyDisabledBtn" class="confirm-btn loading-btn fl">确认</div>
+            </div>
+        </div>
+    </content>
+    <footer>
+        <p>上海创蓝文化传播有限公司[创蓝(中国)]版权所有Copyright ©2012-2015 All Rights Reserved</p>
+        <p>公司地址:上海市松江区中创路68号启迪漕河泾科技园19栋
+            <a href="javascript:;">在线客服：<i><img src="../image/qq.png" class="qq kfqq"></img></i></a>
+
+        </p>
+        <p>增值电信业务经营许可证:B2-20120076 沪ICP备案：15046301号-2 沪公网安备案31011702001190号</p>
+    </footer>
+</div>
+<script rel="script" src="../js/env.js?2017101131"></script>
+<script src="../js/udesk.js?2017101132"></script>
+<script rel="script" src="../js/index.js?2017101133"></script>
+<center><script language="javascript" type="text/javascript" src="//js.users.51.la/19311708.js"></script>
+<noscript><a href="//www.51.la/?19311708" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="//img.users.51.la/19311708.asp" style="border:none" /></a></noscript></center>
+</body>
+</html>

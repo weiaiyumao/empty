@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>防羊毛党控件</title>
+    <link rel="stylesheet" href="../css/main.css?2017101114">
+    <link rel="stylesheet" href="../css/api.css?2017101115">
+    <link rel="SHORTCUT ICON" href="../image/icon40.png?2017101116"/>
+    <script rel="script" src="../js/jquery-3.2.1.min.js?2017101117"></script>
+    <!-- <script rel="script" src="../js/jquery.cookie.js"></script> -->
+</head>
+<body>
+<div class="wrapper">
+    <div class="header-wrapper w1200">
+        <header class="cf">
+            <div class="logo fl"></div>
+            <div class="list-wrapper fr">
+                <ul class="list fl cf">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./product.html">产品页</a></li>
+                    <li><a href="./we.html">中心简介</a></li>
+                </ul>
+                <button id="rechargeBtn"><a href="./recharge.html">充值</a></button>
+                <div class="personal-center fl">
+                    <span>个人中心</span>
+                    <ul>
+                        <li><a href="./personal-center.html">进入账户</a></li>
+                        <li><a href="./result.html">历史检测</a></li>
+                        <li><a id="bindErp" href="#">绑定自助通</a></li>
+                        <li><a id="loginOut" href="#">退出登录</a></li>
+                    </ul>
+                </div>
+                <div id="login" class="fr">一键登录</div>
+            </div>
+
+            <div class="bind-account">
+                <span class="fl">是否绑定自助通账号，绑定请点击</span>
+                <button id="bind" class="fl fr">绑定</button>
+            </div>
+        </header>
+    </div>
+
+    <div class="advertisement">
+        <div class="w1200 swiper-container">
+            <ul class="swiper-wrapper">
+                <li><a class="banner1" href="javascript:;"></a></li>
+                <li><a class="banner2" href="javascript:;"></a></li>
+                <li><a class="banner3" href="javascript:;"></a></li>
+                <li><a class="banner4" href="javascript:;"></a></li>
+            </ul>
+        </div>
+
+        <ul class="nav-wrapper">
+            <li class="active"></li><li></li><li></li><li></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 class="w1200">防羊毛党控件
+            <span></span>
+        </h1>
+        <div class="api-info w1200">
+            <div class="info-detail cf">
+                <div class="basic fl">
+                    <h4>基本信息</h4>
+                    <p class="pl10">当前余额（条）</p>
+                    <strong class="pl10">10888</strong>
+                    <button class="btn" style="margin-left:10px;"><a href="./recharge.html" style="color:#84899f;">充值</a></button>
+                </div>
+                <div class="inter fl">
+                    <h4>API接口</h4>
+                    <p class="pl10 cf">API账号：ADL232329309<button class="btn fr">复制</button></p>
+                    <p class="pl10">API密码：<i class="eye"></i>ADL232329309</p>
+                    <button class="btn" style="margin:17px 0 0 10px;"><a href="javascript:;" style="color:#84899f;"></a>对接文档</button>
+                </div>
+                <div class="msg-set fl">
+                    <h4>接收通知设置</h4>
+                    <div class="input-box pl10 cf">
+                        <input placeholder="请填写手机号码">
+                        <span>提交</span>
+                    </div>
+                    <div class="input-box pl10 cf">
+                        <input placeholder="请填写邮箱地址">
+                        <span>提交</span>
+                    </div>
+                    <p class="red pl10" style="margin-top:20px;">检测结果信息将会通过手机和邮件形式通知，请务必填写</p>
+                </div>
+            </div>
+            <div class="set">
+                <h4>设置</h4>
+                <ul class="tabs">
+                    <li class="active">检测结果</li>
+                    <li>IP绑定</li>
+                    <li>数据推送</li>
+                    <li>余额提醒</li>
+                </ul>
+                <div class="set-box detection active1">
+                    <ul>
+                        <li>ID</li>
+                        <li>手机号</li>
+                        <li>套卡等级</li>
+                        <li>近三个月换机频率</li>
+                        <li>提交时间</li>
+                        <li>回执时间</li>
+                    </ul>
+                    <table>
+                        <tr>
+                            <td>255566666666</td>
+                            <td>1586253548x</td>
+                            <td>1级</td>
+                            <td>1次</td>
+                            <td>2017-09-27 </td>
+                            <td>2017-09-27 </td>
+                        </tr>
+                        <tr>
+                            <td>255566666666</td>
+                            <td>1586253548x</td>
+                            <td>1级</td>
+                            <td>1次</td>
+                            <td>2017-09-27 </td>
+                            <td>2017-09-27 </td>
+                        </tr>
+                        <tr>
+                            <td>255566666666</td>
+                            <td>1586253548x</td>
+                            <td>1级</td>
+                            <td>1次</td>
+                            <td>2017-09-27 </td>
+                            <td>2017-09-27 </td>
+                        </tr>
+                        <tr>
+                            <td>255566666666</td>
+                            <td>1586253548x</td>
+                            <td>1级</td>
+                            <td>1次</td>
+                            <td>2017-09-27 </td>
+                            <td>2017-09-27 </td>
+                        </tr>
+                        <tr>
+                            <td>255566666666</td>
+                            <td>1586253548x</td>
+                            <td>1级</td>
+                            <td>1次</td>
+                            <td>2017-09-27 </td>
+                            <td>2017-09-27 </td>
+                        </tr>
+                        <tr>
+                            <td>255566666666</td>
+                            <td>1586253548x</td>
+                            <td>1级</td>
+                            <td>1次</td>
+                            <td>2017-09-27 </td>
+                            <td>2017-09-27 </td>
+                        </tr>
+                    </table>
+                    <div class="page">
+                        <input type="button" value="第一页">
+                        <input type="button" value="上一页">
+                        <input type="button" value="下一页">
+                        <input type="button" value="最后一页">
+                    </div>
+                </div>
+
+                <div class="set-box  bind-ip active2">
+                    <p>添加服务器IP地址</p>
+                    <textarea rows="3" cols="100" placeholder="填写需报规定的IP地址，IP地址之间用半逗号分隔，复制同样也是用半逗号分隔"></textarea>
+                    <br>
+                    <button class="btn">保存</button>
+                </div>
+                    
+                <div class="set-box push active3">
+                    <div class="switch">推送开关 ： </div>
+                    <div class="switch1" data-status='1'>
+                        <div class="push-btn" data-status='2'></div>
+                    </div>
+                    <div>
+                        <div class=" reception">
+                            <div>接收推送地址：</div>
+                            <input type="text" name="" class="reception">
+                        </div>
+                    </div>
+
+                    <button class="btn">保存</button>
+                </div>
+                <div class="set-box remind active4">
+                    <div>提醒金额 : 账户低于<input type="text" name="">
+                    条，发送提醒信息
+                    </div>
+                    <div class="remind1">免费短信提醒 : <input type="text" name=""></div>
+                    <div class="number">最多三个号码，多个号码用英文逗号隔开</div>
+                    <button class="btn">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer-wrapper">
+        <div class="footer w1200 cf">
+            <div class="href-list fl">
+                <h3>联系我们</h3>
+                <ul class="cf">
+                    <li><a href="#">客服热线：400-9669-253（7x24h）</a></li>
+                    <li><a href="#">售后咨询：800004544</a></li>
+                    <li><a href="#">在线客服：<i class="qq"></i></a></li>
+                    <!-- <li><a href="#">微信公众号：<i class="wx"></i></a></li> -->
+                    <li><a href="#">商务合作：2880090331</a></li>
+                </ul>
+            </div>
+            <div class="href-list fl">
+                <h3>帮助中心</h3>
+                <ul class="cf">
+                    <li id="gather"><a href="./refuse.html">拒绝采集</a></li>
+                    <li><a href="./how-recharge.html">怎么充值</a></li>
+                    <li><a href="./billing-way.html">计费方式</a></li>
+                </ul>
+            </div>
+            <div class="copyright fl">
+                <p>上海创蓝文化传播有限公司[创蓝(中国)]版权所有Copyright ©2012-2015 All Rights Reserved</p>
+                <p>公司地址:上海市松江区中创路68号启迪漕河泾科技园19栋</p>
+                <p>增值电信业务经营许可证:B2-20120076 沪ICP备案：15046301号-2 沪公网安备案31011702001190号</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="loginBox">
+    <p>一键登录</p>
+    <input id="account" placeholder="请输入账号(手机号码)" type="text"/>
+    <span id="warningTel" class="red">手机格式不正确</span>
+    <div class="code-wrapper cf">
+        <input id="code" class="fl" placeholder="请输入验证码" type="text"/>
+        <div id="getCode" class="fr">获取验证码</div>
+        <div id="codeBtn" class="fr"><span>60</span>S</div>
+        <span id="warningCode" class="red">验证码不能为空</span>
+        <span id="wrongCode" class="red">验证码错误</span>
+    </div>
+    <div id="loginBtn">登录</div>
+    <div class="login-disabled-btn loading-btn">登录</div>
+    <span class="closeLogin"></span>
+</div>
+
+<div id="tipBox"></div>
+<script rel="script" src="../js/env.js?2017101118"></script>
+<center><script src="../js/control.js?2017101119"></script>
+<noscript><a href="//www.51.la/?19311708" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="//img.users.51.la/19311708.asp" style="border:none" /></a></noscript></center>
+</body>
+</html>

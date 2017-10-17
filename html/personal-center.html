@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/main.css?2017101134">
+    <link rel="stylesheet" href="../css/personal-center.css?2017101135">
+    <link rel="SHORTCUT ICON" href="../image/icon40.png?2017101136"/>
+    <script rel="script" src="../js/jquery-3.2.1.min.js?2017101137"></script>
+    <script rel="script" src="../js/jquery.cookie.js?2017101138"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header-wrapper w1200">
+        <header class="cf">
+            <div class="logo fl"></div>
+            <div class="list-wrapper fr">
+                <ul class="list fl cf">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./product.html">产品页</a></li>
+                    <li><a href="./we.html" target="_blank">中心简介</a></li>
+                </ul>
+                <button id="rechargeBtn"><a href="./recharge.html">充值</a></button>
+                <div class="personal-center fl">
+                    <span>个人中心</span>
+                    <ul>
+                        <li><a href="./personal-center.html">进入账户</a></li>
+                        <li><a href="./result.html">历史检测</a></li>
+                        <!-- <li class="bindErp"><a id="bindErp" href="#">绑定自助通</a></li> -->
+                        <li><a id="loginOut" href="#">退出登录</a></li>
+                    </ul>
+                </div>
+                <div id="login" class="fr">一键登录</div>
+            </div>
+
+            <div class="bind-account">
+                <span class="fl">是否绑定自助通账号，绑定请点击</span>
+                <button id="bind" class="fl fr">绑定</button>
+            </div>
+        </header>
+    </div>
+    <div class="header-image">
+        <div class="title w1200"></div>
+    </div>
+
+
+
+    <div class="content">
+        <div class="content-box w1200">
+            <h2>账户中心</h2>
+            <ul class="box-info user-info cf">
+                <li>
+                    <p class="title">账户信息</p>
+                    <div id="info">空</div>
+                </li>
+                <li>
+                    <p class="title">账户余额</p>
+                    <div id="balance" class="info">0</div>
+                </li>
+                <li>
+                    <p class="title">
+                        接收通知邮箱和手机
+                        <span id="modify">修改</span>
+                    </p>
+                    <div class="info" id="tel">空</div>
+                    <div class="info" id="mail">空</div>
+                </li>
+                <li class="recharge">
+                    <a href="./recharge.html">充值</a>
+                    <p>满一千9折优惠</p>
+                </li>
+            </ul>
+        </div>
+        <div class="content-box w1200">
+            <h2>订单记录</h2>
+            <div class="box-info order-info" style="margin:0;">
+                <ul class="title cf">
+                    <li class="col1">丨&nbsp;订单编号</li>
+                    <li class="col2">丨&nbsp;金额(元)</li>
+                    <li class="col3">丨&nbsp;订单类型</li>
+                    <li class="col4">丨&nbsp;状态</li>
+                    <li class="col5">丨&nbsp;充值日期</li>
+                    <li class="col6">丨&nbsp;支付方式</li>
+                </ul>
+
+                <div id="tableWrapper">
+                    <!-- <ul class="table-row cf">
+                        <li class="col1">13938012302</li>
+                        <li class="col2">190</li>
+                        <li class="col3">退款</li>
+                        <li class="col4">退款成功</li>
+                        <li class="col5">2017-09-13 12：00</li>
+                        <li class="col6">支付宝支付</li>
+                    </ul> -->
+                </div>
+                <div id="noData">暂无数据</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notice-box">
+        <p>接收检测结果的联系方式</p>
+        <div id="phone" class="ipt2 phone"></div>
+        <input id="email" class="ipt2" type="text" placeholder="请填写您接收结果的邮箱地址（选填）">
+        <span id="warningMail" class="red">邮箱格式不正确</span>
+        <span id="warningNull" class="red">邮箱不能为空</span>
+        <div class="buttons cf">
+            <div id="confirmModify" class="confirm-btn fl">确认</div>
+            <div id="modifyDisabledBtn" class="confirm-btn loading-btn fl">确认</div>
+            <div id="cancleModify" class="cancle-btn fr">取消</div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+
+    <div class="footer-wrapper">
+        <div class="footer w1200 cf">
+            <div class="href-list fl">
+                <h3>联系我们</h3>
+                <ul class="cf">
+                    <li><a href="javascript:;">客服热线：400-9669-253（7x24h）</a></li>
+                    <li><a href="javascript:;">售后咨询：800004544</a></li>
+                    <li><a href="javascript:;">在线客服：<i class="qq kfqq"></i></a></li>
+                    <!-- <li><a href="javascript:;">微信公众号：<i class="wx"></i></a></li> -->
+                    <li><a href="javascript:;">商务合作：2880090331</a></li>
+                </ul>
+            </div>
+            <div class="href-list fl">
+                <h3>帮助中心</h3>
+                <ul class="cf">
+                    <li id="gather"><a href="./refuse.html">拒绝采集</a></li>
+                    <li><a href="./how-recharge.html">怎么充值</a></li>
+                    <li><a href="./billing-way.html">计费方式</a></li>
+                </ul>
+            </div>
+            <div class="copyright fl">
+                <p>上海创蓝文化传播有限公司[创蓝(中国)]版权所有Copyright ©2012-2015 All Rights Reserved</p>
+                <p>公司地址:上海市松江区中创路68号启迪漕河泾科技园19栋</p>
+                <p>增值电信业务经营许可证:B2-20120076 沪ICP备案：15046301号-2 沪公网安备案31011702001190号</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mask"></div>
+
+<div id="loginBox">
+    <p>一键登录</p>
+    <input id="account" placeholder="请输入账号(手机号码)" type="text"/>
+    <span id="warningTel" class="red">手机格式不正确</span>
+    <div class="code-wrapper cf">
+        <input id="code" class="fl" placeholder="请输入验证码" type="text"/>
+        <div id="getCode" class="fr">获取验证码</div>
+        <div id="codeBtn" class="fr"><span>60</span>S</div>
+        <span id="warningCode" class="red">验证码不能为空</span>
+        <span id="wrongCode" class="red">验证码错误</span>
+    </div>
+    <div id="loginBtn">登录</div>
+    <div class="login-disabled-btn loading-btn">登录</div>
+    <span class="closeLogin"></span>
+</div>
+
+<div id="tipBox"></div>
+<script rel="script" src="../js/env.js?2017101139"></script>
+<script src="../js/udesk.js?2017101140"></script>
+<center><script rel="script" src="../js/personal.js?2017101141"></script>
+<noscript><a href="//www.51.la/?19311708" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="//img.users.51.la/19311708.asp" style="border:none" /></a></noscript></center>
+</body>
+</html>

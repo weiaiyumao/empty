@@ -1,0 +1,101 @@
+header .logo{
+    background:url('../image/logo_blue.png') no-repeat center center;
+}
+header .list-wrapper ul.list li span{
+    color:#59607c;
+}
+h4{
+    height:12px;
+    line-height:12px;
+    padding-left:7px;
+    border-left:4px solid #01c0c8;
+    color:#84899f;
+}
+.content h1{
+    margin-bottom:35px;
+}
+
+.content .api-info{
+    padding:41px 32px;
+    background-color:#fff;
+}
+.content .api-info .info-detail{
+    margin-bottom:72px;
+}
+
+
+
+/* billing-way  css样式 */
+.wrapper>.content>.way-way{
+    height: 600px;
+    text-align: center;
+}
+.wrapper>.content>.way-way.way-cf{
+    height: 480px;
+    overflow: hidden;
+}
+.way-cf>ul{
+    width: 945px;
+    height: 320px;
+    margin: auto;
+    margin-top: 70px;
+}
+.way-cf>ul li:first-child{
+    margin-left: 1px;
+}
+.way-cf>ul li{
+    height: 100%;
+    width: 180px;
+    border: 1px solid #cccccc;
+    float: left;
+    margin-left: 74px;
+    position: relative;
+}
+.way-cf ul li a *{
+    color: #666;
+    text-align: center;
+}
+.way-cf ul li a .way-strip{
+    margin-top: 110px;
+    font-size: 16px;
+}
+.way-cf ul li a .way-unit{
+    color: #ff8a00;
+    font-size: 16px;
+    margin-top: 0px;
+}
+.way-cf ul li a .way-unit1{
+    margin-top: 50px;
+}
+.way-cf ul li a .way-unit span{
+    font-size: 14px;
+}
+.way-cf ul li a .way-raw{
+    margin-top: 40px;
+}
+.way-cf ul li a .way-raw *{
+    color: #cccccc;
+}
+.way-cf ul li a .way-discount{
+    color: #fff;
+}
+.way-discount{
+    height: 80px;
+    width: 27px;
+    background-image: url(../image/zhekou_16.png);
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding-top: 10px;
+    position: absolute;
+    right: 25px;
+    top: -71px;
+}
+.way-cf div{
+    color: #666;
+    margin-top: 70px;
+    font-size: 16px;
+}
+.way-cf div span{
+    color: #f15a5a;
+    font-size: 16px;
+}
